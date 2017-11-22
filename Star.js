@@ -16,7 +16,7 @@ function Star() {
 
   this.show = function() {
     fill(random (255), random (255), random (255), random (255));
-    noStroke();
+    //noStroke();
 
     var sx = map(this.x / this.z, 0, 1, 0, width);
     var sy = map(this.y / this.z, 0, 1, 0, height);
