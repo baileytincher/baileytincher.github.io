@@ -16,7 +16,7 @@ function setup() {
 
 function draw() {
   
-  speed = map(mouseX, 0, width / 2, 50, 0);
+  speed = map(mouseX, width / 2, 0, 0, 50);
 
   speed = map(mouseX, width / 2, width, 0, 50);
 
