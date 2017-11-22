@@ -10,7 +10,7 @@ function setup() {
 }
 
 function draw() { 
-  speed = map(mouseY, 0, height, 0, 75);
+  speed = map(mouseY, 0, height, 0, 40);
 
   background(0);
   translate(width / 2, height / 2);
