@@ -15,7 +15,12 @@ function setup() {
 }
 
 function draw() {
-  speed = map(mouseX, 0, width, 49, 50);
+  if (mouseX > width / 2) {
+	speed = map(mouseX, 0, width / 2, 50, 0);
+  }
+  else {
+	speed = map(mouseX, width / 2, width, 0, 50);
+  }
   background(0);
   translate(width / 2, height / 2);
   for (var i = 0; i < stars.length; i++) {
