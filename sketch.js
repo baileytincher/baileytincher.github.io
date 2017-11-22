@@ -16,9 +16,7 @@ function setup() {
 
 function draw() {
   
-  speed = map(mouseX, width / 2, 0, 0, 50);
-
-  speed = map(mouseX, width / 2, width, 0, 50);
+  speed = map(mouseY, 0, height, 0, 50);
 
   background(0);
   translate(width / 2, height / 2);
