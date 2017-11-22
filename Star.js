@@ -1,4 +1,7 @@
 function Star() {
+  var red = random(255);
+  var blue = random(255);
+  var green = random(255);
   this.x = random(-width, width);
   this.y = random(-height, height);
   this.z = random(width);
@@ -15,7 +18,7 @@ function Star() {
   }
 
   this.show = function() {
-    fill(random (255), random (255), random (255), random (255));
+    fill(red, blue, green, random (255));
     //noStroke();
 
     var sx = map(this.x / this.z, 0, 1, 0, width);
@@ -29,7 +32,7 @@ function Star() {
 
     this.pz = this.z;
 
-    stroke(random (255), random (255), random (255), random (255));
+    stroke(red, blue, green, random (255));
     line(px, py, sx, sy);
 
   }
