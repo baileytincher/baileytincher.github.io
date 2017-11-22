@@ -1,8 +1,3 @@
-// Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
-// Code for: https://youtu.be/17WoOqgXsRM
-
 function Star() {
   this.x = random(-width, width);
   this.y = random(-height, height);
@@ -20,7 +15,7 @@ function Star() {
   }
 
   this.show = function() {
-    fill(255);
+    fill(random (1, 255);
     noStroke();
 
     var sx = map(this.x / this.z, 0, 1, 0, width);
@@ -34,7 +29,7 @@ function Star() {
 
     this.pz = this.z;
 
-    stroke(255);
+    stroke(random (1, 255);
     line(px, py, sx, sy);
 
   }

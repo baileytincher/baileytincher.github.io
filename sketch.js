@@ -1,8 +1,3 @@
-// Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
-// Code for: https://youtu.be/17WoOqgXsRM
-
 var stars = [];
 
 var speed;
@@ -14,8 +9,7 @@ function setup() {
   }
 }
 
-function draw() {
-  
+function draw() { 
   speed = map(mouseY, 0, height, 0, 75);
 
   background(0);
