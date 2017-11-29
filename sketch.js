@@ -12,7 +12,7 @@ function setup() {
 function draw() { 
   speed = map(mouseY, 0, height, 0, 40);
 
-  background(255);
+  background(230, 230, 230);
   translate(width / 2, height / 2);
   for (var i = 0; i < stars.length; i++) {
     stars[i].update();
