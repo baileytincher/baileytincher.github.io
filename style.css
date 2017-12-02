@@ -44,7 +44,7 @@ h1 {
 a {
   text-decoration: none;
   /*color: #ffff66;*/
-  color: #ef8319;
+  color: #d92626;
 }
 
 p {
@@ -56,9 +56,9 @@ p {
 }
 
 .bullets {
-  color: white;
+  color: #4d0000;
 }
 
 .social {
-  color: #ef8319;
+  color: #d92626;
 }
