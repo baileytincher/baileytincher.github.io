@@ -12,14 +12,6 @@ canvas {
 	z-index:-1;
 } 
 
-
-.cartoon {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 10px;
-}
-
 .titles {
   position: absolute;
   top: 30%;
@@ -37,13 +29,11 @@ h1 {
   border: 0px;
   margin: 0px;
   text-align: center;
-  /*color: #7a9fd0;*/
   color: #4d0000;
 }
 
 a {
   text-decoration: none;
-  /*color: #ffff66;*/
   color: #d92626;
 }
 
