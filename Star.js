@@ -6,8 +6,7 @@ function Star() {
   this.y = random(-height, height);
   this.z = random(width);
   this.pz = this.z;
-  var counter = 0;
-  var alpha = 100 + Math.random(100);
+  var alpha = 50;
 
   this.update = function() {
     this.z = this.z - speed;
@@ -20,11 +19,7 @@ function Star() {
   }
 
   this.show = function() {
-	counter++;
-	if (counter > 100) {
-		alpha = 100 + Math.random(100);
-		counter = 0;
-	}
+	alpha = map(this.z, 0, width, 50, 255);
 	
     fill(red, blue, green, alpha);
     //noStroke();
