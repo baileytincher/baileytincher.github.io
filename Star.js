@@ -19,7 +19,8 @@ function Star() {
   }
 
   this.show = function() {
-	alpha = map(this.z, 0, width, 50, 255);
+	var r = map(this.z, 0, width, 16, 0);
+	alpha = map(r, 0, 16, 0, 200);
 	
     fill(red, blue, green, alpha);
     //noStroke();
