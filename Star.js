@@ -7,7 +7,7 @@ function Star() {
   this.z = random(width);
   this.pz = this.z;
   var counter = 0;
-  var alpha = Math.random(255);
+  var alpha = 100 + Math.random(100);
 
   this.update = function() {
     this.z = this.z - speed;
@@ -22,7 +22,7 @@ function Star() {
   this.show = function() {
 	counter++;
 	if (counter > 100) {
-		alpha = Math.random(255);
+		alpha = 100 + Math.random(100);
 		counter = 0;
 	}
 	
