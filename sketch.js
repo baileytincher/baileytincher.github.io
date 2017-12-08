@@ -19,3 +19,11 @@ function draw() {
     stars[i].show();
   }
 }
+
+function resize() {
+  canvas.width = document.body.offsetWidth;
+  canvas.height = document.body.scrollHeight;
+}
+window.addEventListener('orientationchange', resize, true);
+window.addEventListener('resize', resize, true);
+
