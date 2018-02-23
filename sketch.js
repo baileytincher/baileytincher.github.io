@@ -3,7 +3,7 @@ var stars = [];
 var speed;
 
 function setup() {
-	createCanvas(windowWidth,windowHeight);
+  createCanvas(windowWidth,windowHeight);
   for (var i = 0; i < 800; i++) {
     stars[i] = new Star();
   }
@@ -23,7 +23,9 @@ function draw() {
 function resize() {
   canvas.width = document.body.offsetWidth;
   canvas.height = document.body.scrollHeight;
+  setup();
 }
 window.addEventListener('orientationchange', resize, true);
 window.addEventListener('resize', resize, true);
+
 
