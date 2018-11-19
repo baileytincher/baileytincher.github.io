@@ -152,7 +152,7 @@
       {
         "title":"UIUC Events Alexa Skill",
         "category":"A simple skill for the Amazon Assistant that scrapes events going on at the University of Illinois",
-        "image":"uiuc-events-screenshot.png",
+        "image":"uiuc-events-screenshot.PNG",
         "url":"https://www.amazon.com/Bailey-Tincher-University-Illinois-Events/dp/B07KH5F32M/ref=sr_1_1?s=digital-skills&ie=UTF8&qid=1542598536&sr=1-1&keywords=university+of+illinois+events"
       },
       {
@@ -164,7 +164,7 @@
       {
         "title":"Chemical Molecule Drawer",
         "category":"A custom organic molecule drawing library I created for UIUC CS 125 students",
-        "image":"molecule-screenshot.png",
+        "image":"molecule-screenshot.PNG",
         "url":"https://github.com/baileytincher/Molecule_Drawer"
       },
       {
