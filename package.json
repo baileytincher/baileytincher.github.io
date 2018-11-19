@@ -1,5 +1,6 @@
 {
   "name": "resume_template",
+  "homepage": "http://btin.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
