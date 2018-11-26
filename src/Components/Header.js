@@ -3,7 +3,7 @@ import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Background from './Background/Background'
 
 const scrollTo = (el) => {
-    const elementPosition = el.offsetTop;
+    const elementPosition = el.offsetTop + 1;
     window.scroll({
         top: elementPosition,
         left: 0,
@@ -36,31 +36,33 @@ class Header extends Component {
 
             <nav id="nav-wrap">
 
-            <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-            <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
+            <NavLink className="mobile-btn" to="#nav-wrap" title="Show navigation">Show navigation</NavLink>
+            <NavLink className="mobile-btn" to="#home" title="Hide navigation">Hide navigation</NavLink>
 
             <ul id="nav" className="nav">
-            <li className="current"><NavLink activeClassName="active" scroll={el => scrollTo(el)} to="#home">Home</NavLink></li>
-            <li><NavLink activeClassName="active" scroll={el => scrollTo(el)} to="#about">My Story</NavLink></li>
-            <li><NavLink activeClassName="active" scroll={el => scrollTo(el)} to="#resume">Resume</NavLink></li>
-            <li><NavLink activeClassName="active" scroll={el => scrollTo(el)} to="#portfolio">Projects</NavLink></li>
-            <li><NavLink activeClassName="active" scroll={el => scrollTo(el)} to="#testimonials">Testimonials</NavLink></li>
-            <li><NavLink activeClassName="active" scroll={el => scrollTo(el)} to="#contact">Contact</NavLink></li>
+              <li className="current"><NavLink activeClassName="active" scroll={el => scrollTo(el)} to="#home">Home</NavLink></li>
+              <li><NavLink activeClassName="active" scroll={el => scrollTo(el)} to="#about">My Story</NavLink></li>
+              <li><NavLink activeClassName="active" scroll={el => scrollTo(el)} to="#resume">Resume</NavLink></li>
+              <li><NavLink activeClassName="active" scroll={el => scrollTo(el)} to="#portfolio">Projects</NavLink></li>
+              {/*
+              <li><NavLink activeClassName="active" scroll={el => scrollTo(el)} to="#testimonials">Testimonials</NavLink></li>
+              <li><NavLink activeClassName="active" scroll={el => scrollTo(el)} to="#contact">Contact</NavLink></li>
+              */}
             </ul>
 
             </nav>
 
             <div className="row banner">
-            <div className="banner-text">
-            <h1 className="responsive-headline">I'm {name}<span id="cursor">_</span></h1>
-            <h3>I am a <span>{schoolclass}</span> studying <span>{major1}</span> and <span>{major2}</span></h3>
-            <h3>at the <span>{school}</span> at <span>{location}</span>.</h3>
-            <h3><span id="tagline">{description}</span>.</h3>
-            <hr />
-            <ul className="social">
-            {networks}
-            </ul>
-            </div>
+              <div className="banner-text">
+                <h1 className="responsive-headline">I'm {name}<span id="cursor">_</span></h1>
+                <h3>I am a <span>{schoolclass}</span> studying <span>{major1}</span> and <span>{major2}</span></h3>
+                <h3>at the <span>{school}</span> at <span>{location}</span>.</h3>
+                <h3><span id="tagline">{description}</span>.</h3>
+                <br />
+                <ul className="social">
+                  {networks}
+                </ul>
+              </div>
             </div>
 
             <p className="scrolldown">

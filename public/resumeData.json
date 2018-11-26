@@ -8,7 +8,7 @@
     "location":"Urbana-Champaign",
     "description":"I intend to live in a quantum future",
     "image":"profilepic.jpg",
-    "bio":"In Dev",
+    "bio":"",
     "contactmessage":"In Dev",
     "email": "bailey.tincher@btin.io",
     "phone": "815-530-7378",
@@ -49,7 +49,7 @@
     ]
   },
   "resume":{
-    "skillmessage":"In Dev",
+    "skillmessage":"I strive to maintain a broad knowledge base, though a lot of my work has focused on data science and analytics as well as CS Education",
     "education":[
       {
         "school":"University of Illinois at Urbana-Champaign",
@@ -128,7 +128,7 @@
         "level":"30%"
       },
       {
-        "name":"Public Speaking",
+        "name":"Public Speaking and Education",
         "level":"85%"
       },
       {
