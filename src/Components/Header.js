@@ -16,9 +16,7 @@ class Header extends Component {
 
         if (this.props.data) {
             var name = this.props.data.name;
-            var occupation = this.props.data.occupation;
             var description = this.props.data.description;
-            var city = this.props.data.address.city;
             var school = this.props.data.school;
             var schoolclass = this.props.data.schoolclass;
             var major1 = this.props.data.major1;

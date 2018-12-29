@@ -57,16 +57,16 @@ export default function(p) {
 
     p.beginShape();
     if (diff) {
-      for (var theta_ = -Math.PI / 4; theta_ <= Math.PI / 4; theta_ += (Math.PI / 800)) {
-        var x = p.width/2 + Math.sin(theta_) * p.width / 1.41;
-        var y = p.height - (p.height / 4 + diffraction_curve(n, d, a, lambda, Io, theta_));
+      for (let theta_ = -Math.PI / 4; theta_ <= Math.PI / 4; theta_ += (Math.PI / 800)) {
+        let x = p.width/2 + Math.sin(theta_) * p.width / 1.41;
+        let y = p.height - (p.height / 4 + diffraction_curve(n, d, a, lambda, Io, theta_));
         p.curveVertex(x, y);
 
       }
     } else {
-      for (var theta_ = -Math.PI / 4; theta_ <= Math.PI / 4; theta_ += (Math.PI / 800)) {
-        var x = p.width/2 + Math.sin(theta_) * p.width / 1.41;
-        var y = p.height - (p.height / 4 + interference_curve(n, d, lambda, Io, theta_));
+      for (let theta_ = -Math.PI / 4; theta_ <= Math.PI / 4; theta_ += (Math.PI / 800)) {
+        let x = p.width/2 + Math.sin(theta_) * p.width / 1.41;
+        let y = p.height - (p.height / 4 + interference_curve(n, d, lambda, Io, theta_));
         p.curveVertex(x, y);
 
       }

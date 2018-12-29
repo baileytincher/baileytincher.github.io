@@ -11,11 +11,6 @@ const cnvStyle = {
 };
 
 export default class Background extends Component {
-
-  constructor() {
-    super();
-  }
-
   onReady = () => this.setState({ status: "ready" });
 
   render() {

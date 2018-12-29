@@ -1,5 +1,5 @@
 export default function(p) {
-  let onReady = () => {};
+  // let onReady = () => {};
   let props = {};
   var ds;
 
@@ -20,7 +20,7 @@ export default function(p) {
   };
 
   p.setOnReady = function(cb) {
-    onReady = cb;
+    // onReady = cb;
   };
 
   p.pushProps = function(_props) {
@@ -68,18 +68,18 @@ export default function(p) {
       var step = this.production.charAt(i);
       //if current character is 'W', replace current character
       //by corresponding rule
-      if (step == 'W') {
+      if (step === 'W') {
         newProduction = newProduction + this.ruleW;
-      } else if (step == 'X') {
+      } else if (step === 'X') {
         newProduction = newProduction + this.ruleX;
-      } else if (step == 'Y') {
+      } else if (step === 'Y') {
         newProduction = newProduction + this.ruleY;
-      } else if (step == 'Z') {
+      } else if (step === 'Z') {
         newProduction = newProduction + this.ruleZ;
       } else {
         //drop all 'F' characters, don't touch other
         //characters (i.e. '+', '-', '[', ']'
-        if (step != 'F') {
+        if (step !== 'F') {
           newProduction = newProduction + step;
         }
       }
@@ -102,7 +102,7 @@ export default function(p) {
       var step = this.production.charAt(i);
 
       //'W', 'X', 'Y', 'Z' symbols don't actually correspond to a turtle action
-      if (step == 'F') {
+      if (step === 'F') {
         p.stroke('rgba(10%,10%,100%,0.005)');
         for (var j = 0; j < this.repeats; j++) {
           p.line(0, 0, 0, -this.drawLength);
@@ -110,13 +110,13 @@ export default function(p) {
           p.translate(0, -this.drawLength);
         }
         this.repeats = 1;
-      } else if (step == '+') {
+      } else if (step === '+') {
         p.rotate(this.theta);
-      } else if (step == '-') {
+      } else if (step === '-') {
         p.rotate(-this.theta);
-      } else if (step == '[') {
+      } else if (step === '[') {
         p.push();
-      } else if (step == ']') {
+      } else if (step === ']') {
         p.pop();
       }
     }
