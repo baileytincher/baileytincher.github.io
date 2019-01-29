@@ -141,7 +141,7 @@
         "title":"Personal Site",
         "category":"This website!",
         "image":"btin.io-screenshot.png",
-        "url":"http://btin.io"
+        "url":"https://btin.io"
       },
       {
         "title":"UIUC Events Alexa Skill",
@@ -153,7 +153,7 @@
         "title":"N-Slit Diffraction Simulation",
         "category":"A visualization of the quantum mechanical phenomena of diffraction",
         "image":"n-slit-screenshot.png",
-        "url":"http://btin.io/nslit"
+        "url":"https://btin.io/#/nslit"
       },
       {
         "title":"Chemical Molecule Drawer",
