@@ -19,7 +19,7 @@
       "zip": "61820"
     },
     "website": "btin.io",
-    "resumedownload":"./Bailey_Tincher_Resume_FA18.pdf",
+    "resumedownload":"./Bailey_Tincher_Resume_SP19.pdf",
     "social":[
       {
         "name":"resume",
@@ -104,7 +104,7 @@
         "level":"80%"
       },
       {
-        "name":"Python Data Science Libraries - Pandas, MatPlotLib, NumPy",
+        "name":"Data Science Tools - Pandas, MatPlotLib, NumPy, MongoDB, MySQL",
         "level":"60%"
       },
       {
@@ -124,7 +124,7 @@
         "level":"30%"
       },
       {
-        "name":"Web Development - React.js, P5.js, HTML5, CSS, jQuery",
+        "name":"Web Development - Flask, Jinja, Node.js, React.js, P5.js, HTML5, CSS, jQuery",
         "level":"30%"
       },
       {
