@@ -33,10 +33,10 @@ class Header extends Component {
             <Background/>
 
             <nav id="nav-wrap">
-
-            <NavLink className="mobile-btn" to="#nav-wrap" title="Show navigation">Show navigation</NavLink>
-            <NavLink className="mobile-btn" to="#home" title="Hide navigation">Hide navigation</NavLink>
-
+            {/*
+            // <NavLink className="mobile-btn" to="#nav-wrap" title="Show navigation">Show navigation</NavLink>
+            // <NavLink className="mobile-btn" to="#home" title="Hide navigation">Hide navigation</NavLink>
+            */}
             <ul id="nav" className="nav">
               <li className="current"><NavLink activeClassName="active" scroll={el => scrollTo(el)} to="#home">Home</NavLink></li>
               <li><NavLink activeClassName="active" scroll={el => scrollTo(el)} to="#about">My Story</NavLink></li>
