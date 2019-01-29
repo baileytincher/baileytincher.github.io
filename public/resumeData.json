@@ -23,7 +23,7 @@
     "social":[
       {
         "name":"resume",
-        "url":"./Bailey_Tincher_Resume_FA18.pdf",
+        "url":"./Bailey_Tincher_Resume_SP19.pdf",
         "className":"fa fa-file-text"
       },
       {
@@ -49,7 +49,7 @@
     ]
   },
   "resume":{
-    "skillmessage":"I strive to maintain a broad knowledge base, though a lot of my work has focused on data science and analytics as well as CS Education",
+    "skillmessage":"I strive to maintain a broad knowledge base, though a lot of my work has focused on data science and analytics as well as CS Education. I only offer a brief overview of my experiences here, though for a more detailed look at my core competencies you can download a copy of my resume at the link above or feel free to contact me via email.",
     "education":[
       {
         "school":"University of Illinois at Urbana-Champaign",
@@ -68,14 +68,14 @@
       {
         "company":"University of Illinois Department of Computer Science",
         "title":"CS 125 Course Developer",
-        "years":"August 2018 - Present",
-        "description":""
+        "years":"January 2018 - Present",
+        "description":"CS 125 is the largest CS course at UIUC with close to 1000 students every semester. As a course developer I collaborate with my fellow peers on course staff as well as the professor in the closest environment to a startup on campus. We mainatin a state of the art course infrastructure and are actively researching revolutionary tools to enhance student education."
       },
       {
         "company":"Illinois Tool Works",
         "title":"Process Engineering Intern",
         "years":"May 2017 - August 2018",
-        "description":""
+        "description":"Illinois Tool Works (NYSE: ITW) is a Fortune 250 manufacturing giant present in 7 market segments across 57 countries worldwide. During my internship, I focused on applying the ITW toolbox and 80/20 core principles to achieve success across numerous self-driven, highly collaborative projects. These included numerous data analysis projects with the VP/GM that have led to complete business process and floor layout overhauls across a 100,000 sqft., $100M in annual revenue manufacturing facility."
       }
     ],
     "involvement":[
@@ -83,19 +83,13 @@
         "organization":"Association of Data Science and Analytics",
         "title":"Advanced Workshops Committee Developer",
         "years":"August 2018 - Present",
-        "description":""
-      },
-      {
-        "organization":"University of Illinois Department of Computer Science",
-        "title":"CS 125 Course Assistant",
-        "years":"January 2018 - August 2018",
-        "description":""
+        "description":"The goal of the University of Illinois chapter and our advanced workshops committee is to spark interest in data science and analytics to those of a vast variety of skill levels through guidance on advanced Python techniques, comprehensive coverage of key algorithms, and relevant projects that reinforce key concepts. We are currently the largest campus CS organization in ACM, teaching upwards of 100 students in our workshops every week."
       },
       {
         "organization":"Boy Scouts of America",
         "title":"Eagle Scout",
         "years":"August 2005 - June 2017",
-        "description":""
+        "description":"As a lifelong Boy Scout and Eagle Scout, I have grown to understand and appreciate key values of leadership, integrity, and my duty to service. Though I have grown past the age of scouting, the experiences I had growing up in it have stuck with me and I seek to pass those opportunities down to my friends and future family."
       }
     ],
     "skills":[
@@ -104,7 +98,7 @@
         "level":"80%"
       },
       {
-        "name":"Data Science Tools - Pandas, MatPlotLib, NumPy, MongoDB, MySQL",
+        "name":"Data Science Tools - Pandas, MatPlotLib, NumPy, MongoDB",
         "level":"60%"
       },
       {
@@ -124,7 +118,7 @@
         "level":"30%"
       },
       {
-        "name":"Web Development - Flask, Jinja, Node.js, React.js, P5.js, HTML5, CSS, jQuery",
+        "name":"Web Development - Flask, Node.js, React.js, P5.js, HTML5",
         "level":"30%"
       },
       {
