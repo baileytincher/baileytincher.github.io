@@ -55,7 +55,7 @@ const Header = () => (
                 alt="Portfolio Logo"
                 onClick={home.onClick}
                 style={{
-                  cursor: 'pointer'
+                  cursor: 'pointer',
                 }}
               />
             );

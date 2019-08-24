@@ -130,7 +130,6 @@ const Project = ({
             <br />
             <Subtitle>{role}</Subtitle>
           </Title>
-          
         </span>
         <Text width={[1]} style={{ overflow: 'auto' }}>
           {description}
@@ -152,7 +151,9 @@ const Project = ({
                   fontAwesomeIcon="github"
                   url={repositoryUrl}
                 />
-              ) : (false)}
+              ) : (
+                false
+              )}
             </Box>
             <Box mx={1} fontSize={5}>
               {projectUrl ? (
@@ -161,8 +162,9 @@ const Project = ({
                   fontAwesomeIcon="globe"
                   url={projectUrl}
                 />
-              ) : (false)}
-              
+              ) : (
+                false
+              )}
             </Box>
           </Flex>
           <ImageSubtitle bg="primary" color="white" y="bottom" x="right" round>
