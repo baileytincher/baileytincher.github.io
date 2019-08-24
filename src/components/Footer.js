@@ -41,14 +41,14 @@ const Footer = () => (
       }
     `}
     render={data => {
-      const { name, socialLinks } = data.contentfulAbout;
+      const { socialLinks } = data.contentfulAbout;
 
       return (
         <Box p={3} backgroundColor="primaryDark">
           <FooterContainer>
             <Fade left>
               <TextFooter fontSize={[2, 3]}>
-                <span>{`${name} Portfolio - Powered by `}</span>
+                <span>My Portfolio - Powered by </span>
                 <Link href="https://www.gatsbyjs.org/">Gatsby</Link>
                 <span> and </span>
                 <Link href="https://www.contentful.com/" mr={1}>

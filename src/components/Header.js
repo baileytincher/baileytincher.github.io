@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { SectionLinks } from 'react-scroll-section';
 import Fade from 'react-reveal/Fade';
 import RouteLink from './RouteLink';
-import Logo from './Logo/Portfolio.svg';
+import Logo from './Logo/home-solid.svg';
 
 const capitalize = s => s && s[0].toUpperCase() + s.slice(1);
 
@@ -55,7 +55,7 @@ const Header = () => (
                 alt="Portfolio Logo"
                 onClick={home.onClick}
                 style={{
-                  cursor: 'pointer',
+                  cursor: 'pointer'
                 }}
               />
             );

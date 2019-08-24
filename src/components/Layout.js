@@ -17,10 +17,19 @@ const GlobalStyle = createGlobalStyle`
   body {
     box-sizing: border-box; 
     margin: 0;
+    border: 0;
+    padding: 0;
     font-family: Cabin, 'Open Sans', sans-serif;
     font-display: swap;
     font-display: fallback;
     overflow-x: hidden;
+  }
+
+  #___gatsby {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
   }
 `;
 

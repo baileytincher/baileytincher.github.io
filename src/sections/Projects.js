@@ -56,6 +56,14 @@ const Title = styled(Text)`
   border-bottom: ${props => props.theme.colors.primary} 5px solid;
 `;
 
+const Subtitle = styled(Text)`
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: table;
+  color: ${props => props.theme.colors.primaryLight};
+`;
+
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -105,6 +113,7 @@ const ProjectTag = styled.div`
 
 const Project = ({
   name,
+  role,
   description,
   projectUrl,
   repositoryUrl,
@@ -118,7 +127,10 @@ const Project = ({
         <span>
           <Title my={2} pb={1}>
             {name}
+            <br />
+            <Subtitle>{role}</Subtitle>
           </Title>
+          
         </span>
         <Text width={[1]} style={{ overflow: 'auto' }}>
           {description}
@@ -134,18 +146,23 @@ const Project = ({
             }}
           >
             <Box mx={1} fontSize={5}>
-              <SocialLink
-                name="Check repository"
-                fontAwesomeIcon="github"
-                url={repositoryUrl}
-              />
+              {repositoryUrl ? (
+                <SocialLink
+                  name="Check repository"
+                  fontAwesomeIcon="github"
+                  url={repositoryUrl}
+                />
+              ) : (false)}
             </Box>
             <Box mx={1} fontSize={5}>
-              <SocialLink
-                name="See project"
-                fontAwesomeIcon="globe"
-                url={projectUrl}
-              />
+              {projectUrl ? (
+                <SocialLink
+                  name="See project"
+                  fontAwesomeIcon="globe"
+                  url={projectUrl}
+                />
+              ) : (false)}
+              
             </Box>
           </Flex>
           <ImageSubtitle bg="primary" color="white" y="bottom" x="right" round>
@@ -162,9 +179,10 @@ const Project = ({
 
 Project.propTypes = {
   name: PropTypes.string.isRequired,
+  role: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  projectUrl: PropTypes.string.isRequired,
-  repositoryUrl: PropTypes.string.isRequired,
+  projectUrl: PropTypes.string,
+  repositoryUrl: PropTypes.string,
   type: PropTypes.string.isRequired,
   publishedDate: PropTypes.string.isRequired,
   logo: PropTypes.shape({
@@ -185,6 +203,7 @@ const Projects = () => (
             projects {
               id
               name
+              role
               description
               projectUrl
               repositoryUrl
