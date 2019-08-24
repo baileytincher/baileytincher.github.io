@@ -10,6 +10,8 @@ const StyledLink = styled.a`
   cursor: pointer;
   position: relative;
 
+  text-decoration: none;
+
   &:after {
     position: absolute;
     z-index: -1;

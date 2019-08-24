@@ -85,7 +85,7 @@ const LandingPage = () => (
                 {roles
                   .sort(() => Math.random() - 0.5)
                   .map(text => (
-                    <Text width={[500, 500]} key={text}>
+                    <Text key={text} style={{ textAlign: 'center' }}>
                       {text}
                     </Text>
                   ))}
