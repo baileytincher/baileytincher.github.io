@@ -21,7 +21,6 @@ const Triangle = styled.div`
       : `border-right: ${border};`;
   }}
 
-
   @media only screen and (min-width: 768px) {
     ${props => {
       const height = props.height[1];
