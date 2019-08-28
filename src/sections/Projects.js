@@ -121,7 +121,7 @@ const Project = ({
   publishedDate,
   logo,
 }) => (
-  <Card p={0}>
+  <Card href={projectUrl || repositoryUrl || ''} p={0}>
     <Flex style={{ height: CARD_HEIGHT }}>
       <TextContainer>
         <span>

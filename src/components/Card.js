@@ -1,5 +1,7 @@
+import React from 'react';
 import styled from 'styled-components';
-import { Card as CardRebass } from 'rebass';
+import PropTypes from 'prop-types';
+import { Card as CardRebass, Link } from 'rebass';
 
 export const CardContainer = styled.div`
   display: grid;
@@ -16,7 +18,7 @@ export const CardContainer = styled.div`
   }
 `;
 
-export const Card = styled(CardRebass).attrs({
+const StyledCard = styled(CardRebass).attrs({
   bg: 'white',
   boxShadow: 0,
   borderRadius: 8,
@@ -28,10 +30,36 @@ export const Card = styled(CardRebass).attrs({
   height: 100%;
   cursor: ${props => (props.onClick ? 'pointer' : 'default')};
 
-  &:hover {
-    top: -10px;
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-  }
+  ${props =>
+    props.href
+      ? '&:hover { top: -10px; box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); cursor: pointer; }'
+      : ''}
 `;
+
+export const Card = props => {
+  const newProps = { ...props };
+
+  if (newProps.href && newProps.href !== '') {
+    const { href } = props;
+    // delete newProps.href;
+
+    return (
+      <Link
+        href={href}
+        target="_blank"
+        rel="noreferrer"
+        style={{ 'text-decoration': 'none', color: 'black', cursor: 'pointer' }}
+      >
+        <StyledCard {...newProps} />
+      </Link>
+    );
+  }
+
+  return <StyledCard {...newProps} />;
+};
+
+Card.propTypes = {
+  href: PropTypes.string,
+};
 
 export default Card;
