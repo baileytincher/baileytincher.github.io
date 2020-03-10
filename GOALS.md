@@ -1,5 +1,5 @@
 Become More Proficient in Webpack/Babel/Yarn
--[x] Deploy an npm module
+- [x] Deploy an npm module
 - [] Build a standalone React website without CRA/Gatsby/etc
 - [] Automate builds/hot-reload for other standalone projects
 - [] Explore optimization effects/impact
