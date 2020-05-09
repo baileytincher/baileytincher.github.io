@@ -7,7 +7,7 @@
     "develop": "gatsby clean && gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "lint": "eslint 'src/**/*.js' && prettier --write 'src/**/*.js'",
+    "lint": "eslint --fix 'src/**/*.js' && prettier --write 'src/**/*.js'",
     "setup": "node ./bin/setup.js",
     "commit": "npm run lint && git add . && git commit && git push",
     "deploy": "npm run build && gh-pages -d public -b master"

@@ -37,16 +37,14 @@ Container.propTypes = {
 const Header = ({ name, icon = '', label = '' }) => (
   <Slide left>
     <Heading color="primaryDark" mb={4}>
-      <h2>
-        <LinkAnimated selected>
-          {name}
-          {icon && (
-            <span role="img" aria-label={label} style={{ marginLeft: '10px' }}>
-              {icon}
-            </span>
-          )}
-        </LinkAnimated>
-      </h2>
+      <LinkAnimated selected>
+        {name}
+        {icon && (
+          <span role="img" aria-label={label} style={{ marginLeft: '10px' }}>
+            {icon}
+          </span>
+        )}
+      </LinkAnimated>
     </Heading>
   </Slide>
 );

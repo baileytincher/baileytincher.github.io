@@ -13,7 +13,7 @@ export const CardContainer = styled.div`
   );
   justify-items: center;
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 600px) {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   }
 `;
@@ -48,7 +48,7 @@ export const Card = props => {
         href={href}
         target="_blank"
         rel="noreferrer"
-        style={{ 'text-decoration': 'none', color: 'black', cursor: 'pointer' }}
+        style={{ textDecoration: 'none', color: 'black', cursor: 'pointer' }}
       >
         <StyledCard {...newProps} />
       </Link>
