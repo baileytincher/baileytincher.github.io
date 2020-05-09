@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Image, Text, Flex } from 'rebass';
+import { Image, Text, Flex, Box } from 'rebass';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
@@ -9,6 +9,7 @@ import { CardContainer, Card } from '../components/Card';
 import Triangle from '../components/Triangle';
 import ImageSubtitle from '../components/ImageSubtitle';
 import Hide from '../components/Hide';
+import SocialLink from '../components/SocialLink';
 
 const Background = () => (
   <div>
@@ -104,7 +105,16 @@ const ProjectTag = styled.div`
   }
 `;
 
-const Experience = ({ name, startDate, endDate, position, items, logo }) => (
+const Experience = ({
+  name,
+  startDate,
+  endDate,
+  position,
+  items,
+  logo,
+  field,
+  href,
+}) => (
   <Card p={0}>
     <Flex style={{ height: CARD_HEIGHT }}>
       <TextContainer>
@@ -128,6 +138,32 @@ const Experience = ({ name, startDate, endDate, position, items, logo }) => (
         <ImageContainer>
           <ProjectImage src={logo.image.src} alt={logo.title} />
           <ProjectTag>
+            <Flex
+              style={{
+                float: 'right',
+              }}
+            >
+              <Box mx={1} fontSize={5}>
+                {href ? (
+                  <SocialLink
+                    name="Website"
+                    fontAwesomeIcon="globe"
+                    url={href}
+                  />
+                ) : (
+                  false
+                )}
+              </Box>
+            </Flex>
+            <ImageSubtitle
+              bg="primary"
+              color="white"
+              y="bottom"
+              x="right"
+              round
+            >
+              {field}
+            </ImageSubtitle>
             <Hide query={MEDIA_QUERY_SMALL}>
               <ImageSubtitle bg="backgroundDark">
                 {`${startDate} - ${endDate || 'present'}`}
@@ -146,6 +182,8 @@ Experience.propTypes = {
   endDate: PropTypes.string,
   position: PropTypes.string.isRequired,
   items: PropTypes.arrayOf(PropTypes.string),
+  field: PropTypes.string,
+  href: PropTypes.string,
   logo: PropTypes.shape({
     image: PropTypes.shape({
       src: PropTypes.string,
@@ -168,6 +206,8 @@ const Experiences = () => (
               endDate(formatString: "MMM YYYY")
               position
               items
+              field
+              href
               logo {
                 title
                 image: resize(width: 200, quality: 100) {
