@@ -84,12 +84,14 @@ const ProjectImage = styled(Image)`
   height: ${CARD_HEIGHT};
   padding: 40px;
   margin-top: 0px;
+  border: 10px solid white;
 
   ${MEDIA_QUERY_SMALL} {
     height: calc(${CARD_HEIGHT} / 2);
     width: calc(${CARD_HEIGHT} / 2);
     margin-top: calc(${CARD_HEIGHT} / 4);
     padding: 10px;
+    border: 0;
   }
 `;
 
@@ -136,7 +138,11 @@ const Experience = ({
 
       <Hide query={MEDIA_QUERY_HIDE}>
         <ImageContainer>
-          <ProjectImage src={logo.image.src} alt={logo.title} />
+          <ProjectImage
+            style={{ padding: '2em' }}
+            src={logo.image.src}
+            alt={logo.title}
+          />
           <ProjectTag>
             <Flex
               style={{
