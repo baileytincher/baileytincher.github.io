@@ -51,7 +51,7 @@ const Footer = () => (
                 <span>My Portfolio - Created with </span>
                 <Link href="https://www.gatsbyjs.org/">Gatsby.js</Link>
                 <span> and </span>
-                <Link href="https://www.contentful.com/" mr={1}>
+                <Link href="https://www.reactjs.org" mr={1}>
                   React.js
                 </Link>
                 <span role="img" aria-label="heart">
