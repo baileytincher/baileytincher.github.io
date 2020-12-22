@@ -1,17 +1,17 @@
 Become More Proficient in Webpack/Babel/Yarn
 - [x] Deploy an npm module
-- [ ] Build a standalone React website without CRA/Gatsby/etc
-- [ ] Automate builds/hot-reload for other standalone projects
-- [ ] Explore optimization effects/impact
+- [x] Build a standalone React website without CRA/Gatsby/etc
+- [x] Automate builds/hot-reload for other standalone projects
+- [x] Explore optimization effects/impact
 - [ ] Look into enabling optional features (i.e. proposed opt-chaining)
 
 Learn TypeScript
-- [ ] Build a backend in TS
-- [ ] Build a React frontend in TS
-- [ ] Mix JS/TS in the same project
+- [x] Build a backend in TS
+- [x] Build a React frontend in TS
+- [x] Mix JS/TS in the same project
 
 Learn a CI/CD Tool
-- [ ] GitHub actions
+- [x] GitHub actions
 - [ ] Jenkins/Travis/CircleCI
 
 Learn a New Strongly Typed/Compiled Language
@@ -35,8 +35,8 @@ Statistical Learning
 - [ ] Triumph CS 446
 
 MongoDB
-- [ ] Aggregations
-- [ ] Populations
+- [x] Aggregations
+- [x] Populations
 - [ ] Triggers
 - [ ] Index performance/scale
 - [ ] Translate aliases contribution
